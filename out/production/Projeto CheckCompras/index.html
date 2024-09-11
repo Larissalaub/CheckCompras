@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container"></div>
+    <h1>Lista de compras</h1>
+
+    <form id="item-form">
+        <input type="text" id="item-name" placeholder="Nome item" required>
+        <input type="number" id="item-quatity" placeholder="Quantidade" min="1" required>
+        <input type="number" id="item-price" placeholder="Preço (R$)" step="0.01" min="0" required>
+        <button type="submit">Adicionar Item</button>
+    </form>
+    <!-- Lista de itens -->
+    <ul id="item-list">
+        <!-- Itens serão adicionados aqui -->
+    </ul>
+
+    <div id="total">
+        <h3>Total: R$ <span id="total-amount">0.00</span></h3>
+    </div>
+
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
